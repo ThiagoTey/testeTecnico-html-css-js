@@ -1,10 +1,9 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   all: unset;
   /* font-family: "Nunito", sans-serif; */
@@ -16,7 +15,7 @@ p {
 }
 
 span {
-    all: unset;
+  all: unset;
 }
 
 button {
@@ -24,27 +23,26 @@ button {
 }
 
 a {
-    all:unset;
-    cursor: pointer;
+  all: unset;
+  cursor: pointer;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .hide-mobile {
-    display: none;
+  display: none;
 }
 
 .hide-desktop {
-    display: block;
+  display: block;
 }
 
 .container {
-    padding-left: 16px;
-    padding-right: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
-
 
 .discount-header {
   background-color: #005cff;
@@ -68,7 +66,7 @@ a {
 }
 
 .logo {
-    object-fit: contain;
+  object-fit: contain;
 }
 
 .navbar {
@@ -88,7 +86,7 @@ a {
   position: relative;
 }
 
-.cart span{
+.cart span {
   position: absolute;
   right: -8px;
   top: -8px;
@@ -124,43 +122,72 @@ a {
 }
 
 .search input::placeholder {
-    color: black;
-    font-weight: 600;
+  color: black;
+  font-weight: 600;
 }
 
 .hero {
-    display: flex;
-    background-color: #E7E7EA;
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
+  display: flex;
+  background-color: #e7e7ea;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
 }
 
-.hero > div:first-child{
-    width: 50%;
-    position: relative;
-    display: flex;
-}
-
-.hero > div:last-child {
-    width: 50%;
-    font-family: "Nunito", sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 10;
-    padding-right: 22px;
+.hero > div:first-child {
+  width: 50%;
+  position: relative;
+  display: flex;
 }
 
 .hero img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    overflow: visible;
-    left: -90px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: visible;
+  right: 5em;
+}
+
+.hero-text {
+  width: 50%;
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 10;
+  padding-right: 22px;
+}
+
+.hero-text h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+}
+
+.hero-text > h2 > span:first-child {
+  font-weight: 700;
+}
+
+.hero-text > h2 > span:last-child {
+  font-weight: 300;
+}
+
+.hero-text p {
+  color: #005cff;
+  margin-top: 12px;
+}
+
+.hero-text > p:first-child {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.hero-text > p:last-child {
+  font-size: 32px;
+  font-weight: 700;
 }
 
 /* Estilos Desktop */
@@ -170,49 +197,114 @@ a {
 
 /* Media */
 @media (min-width: 1024px) {
-    .hide-mobile {
-        display: block;
-    }
-    .hide-desktop {
-        display: none !important;
-    }
-    .container {
-        max-width: 1280px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 22px;
-        padding-right: 22px;
-    }
+  .hide-mobile {
+    display: block;
+  }
+  .hide-desktop {
+    display: none !important;
+  }
+  .container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
 
-    .search {
-        width: 600px;
-    }
+  .search {
+    width: 600px;
+  }
 
-    .user {
-        display: flex;
-        gap: 8px;
-    }
+  .user {
+    display: flex;
+    gap: 8px;
+  }
 
-    .user div{
-        display: flex; 
-        flex-direction: column;
-    }
+  .user div {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .category {
-        display: flex;
-        justify-content: space-between;
-    }
+  /* Category */
 
-    .category button {
-        display: flex;
-        gap: 8px;
-        align-items: center;
-        justify-content: center;
-        font-weight: 700;
-    }
+  .category {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .category button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  }
+
+    /* Hero class */
+
+  .hero {
+    display: flex;
+    background-color: #e7e7ea;
+    width: 100%;
+    height: 510px;
+    overflow: hidden;
+    justify-content: center;
+  }
+  
+  .hero > div:first-child {
+    width: 685px;
+    position: relative;
+    display: flex;
+  }
+  
+  .hero img {
+    all: unset;
+  }
+  
+  .hero-text {
+    width: fit-content;
+    font-family: "Nunito", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+    padding-right: 22px;
+  }
+  
+  .hero-text h2 {
+    display: flex;
+    flex-direction: row;
+    font-size: 100px;
+  }
+  
+  .hero-text > h2 > span:first-child {
+    font-weight: 700;
+  }
+  
+  .hero-text > h2 > span:last-child {
+    font-weight: 300;
+  }
+  
+  .hero-text p {
+    color: #005cff;
+    margin-top: 12px;
+    font-size: 25px;
+  }
+  
+  .hero-text > p:first-of-type {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0.3em; 
+  }
+  
+  .hero-text > p:last-child {
+    font-size: 60px;
+    font-weight: 700;
+  }
 }
 
 /* Desktops grandes */
 @media (min-width: 1280px) {
-
 }

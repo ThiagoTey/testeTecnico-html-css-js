@@ -6,20 +6,47 @@
     <title>Avanti</title>
 
     <!-- Nunito/Nunito sans font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <!-- Cupom promoção -->
-        <div class="discount-header">
-            <p>Ganhe <span>R$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom <span>DESCONTO10</span></p>
+      <!-- Cupom promoção -->
+      <div class="discount-header">
+        <p>
+          Ganhe <span>R$10,00</span> de desconto no seu primeiro pedido. Utilize
+          o cupom <span>DESCONTO10</span>
+        </p>
+      </div>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div >
+            <button>
+                <img width="20px" class="hamburguer" src="/assets/hamburguer.svg" alt="hamburguerBtn">
+            </button>
+            <img class="logo" src="/assets/logo.png" alt="logo">
+            <div class="cart">
+                <span>2</span>
+                <img width="25px" src="/assets/cart.svg" alt="cart">
+            </div>
+        </div>
+
+        <div>
+            <form action="">
+                <div class="search">
+                    <input placeholder="Digite aqui o que você procura" type="text">
+                    <img src="/assets/search.svg" alt="ícone-lupa">
+                </div>
+            </form>
         </div>
       </nav>
+
     </header>
 
     <main>

@@ -79,7 +79,7 @@ a {
   padding-bottom: 20px;
 }
 
-.navbar div:first-child {
+.navbar > div:first-child {
   display: flex;
   justify-content: space-between;
 }
@@ -126,6 +126,41 @@ a {
 .search input::placeholder {
     color: black;
     font-weight: 600;
+}
+
+.hero {
+    display: flex;
+    background-color: #E7E7EA;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.hero > div:first-child{
+    width: 50%;
+    position: relative;
+    display: flex;
+}
+
+.hero > div:last-child {
+    width: 50%;
+    font-family: "Nunito", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+    padding-right: 22px;
+}
+
+.hero img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: visible;
+    left: -90px;
 }
 
 /* Estilos Desktop */

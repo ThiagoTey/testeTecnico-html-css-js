@@ -25,28 +25,71 @@
         </p>
       </div>
       <!-- Navbar -->
-      <nav class="navbar">
-        <div >
-            <button>
-                <img width="20px" class="hamburguer" src="/assets/hamburguer.svg" alt="hamburguerBtn">
-            </button>
-            <img class="logo" src="/assets/logo.png" alt="logo">
-            <div class="cart">
-                <span>2</span>
-                <img width="25px" src="/assets/cart.svg" alt="cart">
+      <nav class="navbar container">
+        <div>
+          <!-- Hamburger btn mobile -->
+          <button class="hide-desktop">
+            <img
+              width="20px"
+              class="hamburguer"
+              src="/assets/hamburguer.svg"
+              alt="HamburgerBtn"
+            />
+          </button>
+
+          <img class="logo" src="/assets/logo.png" alt="logo" />
+
+          <!-- Pesquisa Desktop -->
+          <form class="hide-mobile">
+            <div class="search">
+              <input placeholder="Digite aqui o que você procura" type="text" />
+              <img src="/assets/search.svg" alt="ícone-lupa" />
             </div>
+          </form>
+
+          <div style="display: flex; justify-content: center; align-items: center; gap:24px">
+            <!-- Cliente Desktop -->
+            <div class="hide-mobile user">
+              <img src="/assets/user.svg" alt="userImg" width="24px" />
+              <div>
+                <p>Olá,</p>
+                <span>Nome cliente!</span> 
+              </div>
+            </div>
+            <!-- Carrinho -->
+            <div class="cart">
+              <span>2</span>
+              <img width="24px" src="/assets/cart.svg" alt="cart" />
+            </div>
+          </div>
         </div>
 
         <div>
-            <form action="">
-                <div class="search">
-                    <input placeholder="Digite aqui o que você procura" type="text">
-                    <img src="/assets/search.svg" alt="ícone-lupa">
-                </div>
-            </form>
+          <!-- Pesquisa mobile -->
+          <form class="hide-desktop">
+            <div class="search">
+              <input placeholder="Digite aqui o que você procura" type="text" />
+              <img src="/assets/search.svg" alt="ícone-lupa" />
+            </div>
+          </form>
+
+          <!-- Categorias -->
+          <div class="hide-mobile category" id="category">
+            <div>   
+                <button>
+                    <img
+                    width="20px"
+                    class="hamburguer"
+                    src="/assets/hamburguer.svg"
+                    alt="HamburgerBtn"
+                    />
+                <span>Todas as Categorias</span>
+            </button>
+            </div>
+          </div>
+
         </div>
       </nav>
-
     </header>
 
     <main>

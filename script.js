@@ -5,45 +5,43 @@ const container = document.getElementById("category");
 categories.forEach(category => {
     const a = document.createElement("a");
     a.textContent = category;
-    a.href = "/";  
+    a.href = "/";
     container.appendChild(a);
 });
 
 
 const createProduct = () => {
     const div = document.createElement("div");
-    div.className = "productCard";
+    div.className = "product-card";
 
     div.innerHTML = `
-    <div>
-        <img src="">
-    </div>
-
-    <div>
-        <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
-
-        <div>
-            <div> 
-                <p>R$ 100,00</p>
-                <p>R$79,90</p>
+            <span class="product-new">NOVO</span>
+            <div>
+              <img src="/assets/product.png" />
             </div>
-            <span>10% OFF</span>
-        </div>
-
-        <p>
-            <span>Ou em até </span>
-            <span>10x de R$ 7,90</span>
-        </p>
-
-        <button>Comprar</button>
-    </div>
-
+            <div class="product-text">
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <div class="product-price">
+                <div>
+                  <p class="product-original-price">R$ 100,00</p>
+                  <p class="product-discounted-price">R$79,90</p>
+                </div>
+                <span class="product-discount-percentage">10% OFF</span>
+              </div>
+              <p class="product-installment">
+                <span>Ou em até </span>
+                <span>10x de R$ 7,90</span>
+              </p>
+              <button class="custom-button">Comprar</button>
+            </div>
     `;
 
     return div;
 }
 
+const productContainers = document.getElementsByClassName("product-container")[0];
+
 for (let i = 0; i < 10; i++) {
-    
-    
+    const div = createProduct();
+    productContainers.appendChild(div);
 }

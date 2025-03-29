@@ -31,6 +31,17 @@ a {
   display: flex;
 }
 
+.custom-button {
+  background-color: #005cff;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  border-radius: 8px;
+}
+
 .hide-mobile {
   display: none;
 }
@@ -135,9 +146,9 @@ a {
   height: 300px;
   overflow: hidden;
 
-  box-shadow: 0px 4px 3px -2px rgba(0,0,0,0.31) inset;
-  -webkit-box-shadow: 0px 4px 3px -2px rgba(0,0,0,0.31) inset;
-  -moz-box-shadow: 0px 4px 3px -2px rgba(0,0,0,0.31) inset;
+  box-shadow: 0px 4px 3px -2px rgba(0, 0, 0, 0.31) inset;
+  -webkit-box-shadow: 0px 4px 3px -2px rgba(0, 0, 0, 0.31) inset;
+  -moz-box-shadow: 0px 4px 3px -2px rgba(0, 0, 0, 0.31) inset;
 }
 
 .hero > div:first-child {
@@ -198,16 +209,26 @@ a {
 
 /* Produto */
 
-.product-container{
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-container {
   display: flex;
   overflow-x: scroll;
   scroll-behavior: smooth;
-  gap: 10px;
   margin-top: 16px;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  gap: 8px;
+
   /* overflow-x-scroll scroll-smooth no-scrollbar space-x-4 lg:gap-5 mt-8 p-4 */
 }
 
 .product-card {
+  flex-shrink: 0;
   border: 1px solid #dddddd;
   border-radius: 10px;
   width: 50%;
@@ -218,20 +239,19 @@ a {
   gap: 8px;
 }
 
-
 .product-card img {
   width: 100%;
 }
 
-.product-text > h3{
+.product-text > h3 {
   font-weight: 400;
-  color : #303030;
+  color: #303030;
   font-size: 14px;
 }
 
 .product-price {
   display: flex;
-  gap:14px;
+  gap: 14px;
   margin-top: 4px;
 }
 
@@ -240,24 +260,24 @@ a {
   flex-direction: column;
 }
 
-.product-original-price{
+.product-original-price {
   text-decoration: line-through;
   font-size: 12px;
   color: #303030;
 }
 
-.product-discounted-price{
+.product-discounted-price {
   font-weight: 700;
   font-size: 16px;
 }
 
-.product-discount-percentage{
-  color:white;
+.product-discount-percentage {
+  color: white;
   font-size: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #5EC0BE;
+  background-color: #5ec0be;
   width: 64px;
   height: 20px;
   border-radius: 4px;
@@ -265,22 +285,25 @@ a {
 
 .product-installment {
   font-size: 12px;
-  color:#303030;
+  color: #303030;
 }
 
 .product-installment > span:last-child {
   font-weight: 700;
 }
 
-.custom-button {
-  background-color: #005CFF;
-  width: 100%;
+.product-new {
+  position: absolute;
+  width: 40px;
+  height: 24px;
   color: white;
+  background-color: #00264e;
+  border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 48px;
-  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 700;
 }
 
 /* Estilos Desktop */
@@ -333,7 +356,7 @@ a {
     font-weight: 700;
   }
 
-    /* Hero class */
+  /* Hero class */
 
   .hero {
     display: flex;
@@ -343,17 +366,17 @@ a {
     overflow: hidden;
     justify-content: center;
   }
-  
+
   .hero > div:first-child {
     width: 685px;
     position: relative;
     display: flex;
   }
-  
+
   .hero img {
     all: unset;
   }
-  
+
   .hero-text {
     width: fit-content;
     font-family: "Nunito", sans-serif;
@@ -365,36 +388,47 @@ a {
     z-index: 10;
     padding-right: 22px;
   }
-  
+
   .hero-text h2 {
     display: flex;
     flex-direction: row;
     font-size: 100px;
   }
-  
+
   .hero-text > h2 > span:first-child {
     font-weight: 700;
   }
-  
+
   .hero-text > h2 > span:last-child {
     font-weight: 300;
   }
-  
+
   .hero-text p {
     color: #005cff;
     margin-top: 12px;
     font-size: 25px;
   }
-  
+
   .hero-text > p:first-of-type {
     font-size: 25px;
     font-weight: 500;
-    letter-spacing: 0.3em; 
+    letter-spacing: 0.3em;
   }
-  
+
   .hero-text > p:last-child {
     font-size: 60px;
     font-weight: 700;
+  }
+
+  .product-card {
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    width: 20%;
+    position: relative;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    gap: 8px;
   }
 }
 

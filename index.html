@@ -47,13 +47,20 @@
             </div>
           </form>
 
-          <div style="display: flex; justify-content: center; align-items: center; gap:24px">
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 24px;
+            "
+          >
             <!-- Cliente Desktop -->
             <div class="hide-mobile user">
               <img src="/assets/user.svg" alt="userImg" width="24px" />
               <div>
                 <p>Olá,</p>
-                <span>Nome cliente!</span> 
+                <span>Nome cliente!</span>
               </div>
             </div>
             <!-- Carrinho -->
@@ -75,19 +82,18 @@
 
           <!-- Categorias -->
           <div class="hide-mobile category" id="category">
-            <div>   
-                <button>
-                    <img
-                    width="20px"
-                    class="hamburguer"
-                    src="/assets/hamburguer.svg"
-                    alt="HamburgerBtn"
-                    />
+            <div>
+              <button>
+                <img
+                  width="20px"
+                  class="hamburguer"
+                  src="/assets/hamburguer.svg"
+                  alt="HamburgerBtn"
+                />
                 <span>Todas as Categorias</span>
-            </button>
+              </button>
             </div>
           </div>
-
         </div>
       </nav>
     </header>
@@ -96,71 +102,50 @@
       <!-- Hero -->
       <section class="hero">
         <div>
-            <img src="assets/hero.png" alt="Hero img">
+          <img src="assets/hero.png" alt="Hero img" />
         </div>
 
         <div class="hero-text">
-            <h2>
-                <span>super</span>
-                <span>sale</span>
-            </h2>
-            <p>Itens selecionados com até</p>
-            <p>50%off</p>
+          <h2>
+            <span>super</span>
+            <span>sale</span>
+          </h2>
+          <p>Itens selecionados com até</p>
+          <p>50%off</p>
         </div>
-
       </section>
 
       <!-- Slide Produtos -->
-      <section class="container">
-        <div style="justify-content: space-between;" class="flex">
+      <section>
+        <div style="justify-content: space-between" class="container flex">
           <h4>Lançamentos</h4>
           <a>Ver mais</a>
         </div>
-        <div class="product-container">
+        <div class="container product-container">
 
-        <div class="product-card">
+          <div class="product-card">
+            <span class="product-new">NOVO</span>
             <div>
-                <img src="/assets/product.png">
+              <img src="/assets/product.png" />
             </div>
             <div class="product-text">
-                <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
-                <div class="product-price">
-                    <div> 
-                        <p class="product-original-price">R$ 100,00</p>
-                        <p class="product-discounted-price">R$79,90</p>
-                    </div>
-                    <span class="product-discount-percentage">10% OFF</span>
-                </div>
-                <p class="product-installment">
-                    <span>Ou em até </span>
-                    <span>10x de R$ 7,90</span>
-                </p>
-                <button class="custom-button">Comprar</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-          <div>
-              <img src="/assets/product.png">
-          </div>
-          <div class="product-text">
               <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
               <div class="product-price">
-                  <div> 
-                      <p class="product-original-price">R$ 100,00</p>
-                      <p class="product-discounted-price">R$79,90</p>
-                  </div>
-                  <span class="product-discount-percentage">10% OFF</span>
+                <div>
+                  <p class="product-original-price">R$ 100,00</p>
+                  <p class="product-discounted-price">R$79,90</p>
+                </div>
+                <span class="product-discount-percentage">10% OFF</span>
               </div>
               <p class="product-installment">
-                  <span>Ou em até </span>
-                  <span>10x de R$ 7,90</span>
+                <span>Ou em até </span>
+                <span>10x de R$ 7,90</span>
               </p>
               <button class="custom-button">Comprar</button>
+            </div>
           </div>
-      </div>
-
-      </div>
+          
+        </div>
       </section>
 
       <!-- Detalhes produto da empresa -->

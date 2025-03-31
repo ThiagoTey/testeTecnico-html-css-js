@@ -3,18 +3,18 @@ const categories = ["Departamento", "Departamento", "Departamento", "Departament
 const container = document.getElementById("category");
 
 categories.forEach(category => {
-    const a = document.createElement("a");
-    a.textContent = category;
-    a.href = "/";
-    container.appendChild(a);
+  const a = document.createElement("a");
+  a.textContent = category;
+  a.href = "/";
+  container.appendChild(a);
 });
 
 
 const createProduct = () => {
-    const div = document.createElement("div");
-    div.className = "product-card";
+  const div = document.createElement("div");
+  div.className = "product-card";
 
-    div.innerHTML = `
+  div.innerHTML = `
             <span class="product-new">NOVO</span>
             <div>
               <img src="/assets/product.png" />
@@ -36,12 +36,14 @@ const createProduct = () => {
             </div>
     `;
 
-    return div;
+  return div;
 }
 
-const productContainers = document.getElementsByClassName("product-container")[0];
+const productContainers = document.getElementsByClassName("product-container");
 
-for (let i = 0; i < 10; i++) {
+Array.from(productContainers).forEach(productContainer => {
+  for (let i = 0; i < 10; i++) {
     const div = createProduct();
-    productContainers.appendChild(div);
-}
+    productContainer.appendChild(div);
+  }
+});

@@ -422,7 +422,7 @@ a {
   padding: 18px;
   text-align: center;
 
-  font-family: "Nunito", sans-serif
+  font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 140%;
@@ -664,6 +664,24 @@ a {
   .desktop-service-banner {
     position: relative;
     flex: 6;
+  }
+
+  /* Hero entrar em contato */
+  .second-hero {
+    height: 660px;
+  }
+
+  .second-hero > div {
+    width: 100%;
+    padding: 0;
+    height: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 140%;
   }
 }
 

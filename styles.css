@@ -40,6 +40,8 @@ a {
   align-items: center;
   height: 48px;
   border-radius: 8px;
+
+  cursor: pointer;
 }
 
 .hide-mobile {
@@ -306,6 +308,49 @@ a {
   font-weight: 700;
 }
 
+/* Detalhes produto da empresa */
+
+.company-product-container{
+  position: relative;
+  width: 100%;
+}
+
+.company-product-container > div:first-child {
+  position: relative;
+  width: 100%;
+  background-color: #C2C2C2;
+}
+
+.company-product-container img {
+  width: 100%;
+}
+
+.company-product-text {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  margin-top: 38px;
+
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.company-product-text > h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 4%;
+}
+
+.company-product-text > p {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 5%;
+}
+
 /* Estilos Desktop */
 /* Pequeno */
 /* @media (min-width: 768px) {
@@ -419,6 +464,8 @@ a {
     font-size: 60px;
     font-weight: 700;
   }
+
+  /* Product */
 
   .product-card {
     border: 1px solid #dddddd;

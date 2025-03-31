@@ -337,7 +337,6 @@ a {
 }
 
 .company-product-text > h3 {
-
 }
 
 .title {
@@ -359,18 +358,18 @@ a {
 /* <!-- Detalhes serviço e produto --> */
 
 .company-service-container {
-  background-color: #DEDEDE;
+  background-color: #dedede;
   width: 100%;
   padding: 22px;
   padding-top: 28px;
   padding-bottom: 28px;
 }
 
-.company-service-container img{
+.company-service-container img {
   width: 100%;
 }
 
-.company-service-text{
+.company-service-text {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -378,10 +377,10 @@ a {
   margin-top: 22px;
 }
 
-.company-service-text > div{
-  display: flex;  
+.company-service-text > div {
+  display: flex;
   text-align: left;
-  gap:14px;
+  gap: 14px;
   align-items: center;
 }
 
@@ -397,8 +396,8 @@ a {
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  background: #005CFF;
-  color:white;
+  background: #005cff;
+  color: white;
 }
 
 /* Estilos Desktop */
@@ -568,6 +567,75 @@ a {
 
   .paragraph {
     font-size: 18px;
+  }
+
+  /* <!-- Detalhes serviço e produto --> */
+
+  .company-service-container {
+    background-color: #dedede;
+    width: 100%;
+    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .company-service-container > div:first-child {
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    gap: 50px;
+  }
+
+  .company-service-container img {
+    width: 100%;
+  }
+
+  .company-service-text {
+    display: flex;
+    flex:4;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 0;
+  }
+
+  .company-service-text > div {
+    display: flex;
+    text-align: left;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .company-service-text p {
+    font-size: 18px;
+  }
+
+  .position-svg {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background: #005cff;
+    color: white;
+  }
+
+  .position-svg > img{
+    width: 45px;
+    height: 45px;
+  }
+
+  .desktop-service-banner {
+    position: relative;
+    flex: 6;
   }
 }
 

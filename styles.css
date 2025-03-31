@@ -337,6 +337,10 @@ a {
 }
 
 .company-product-text > h3 {
+
+}
+
+.title {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -345,11 +349,56 @@ a {
   text-transform: uppercase;
 }
 
-.company-product-text > p {
+.paragraph {
   font-family: "Nunito", sans-serif;
   font-size: 14px;
   line-height: 140%;
   letter-spacing: 0.05em;
+}
+
+/* <!-- Detalhes serviço e produto --> */
+
+.company-service-container {
+  background-color: #DEDEDE;
+  width: 100%;
+  padding: 22px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.company-service-container img{
+  width: 100%;
+}
+
+.company-service-text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 22px;
+  margin-top: 22px;
+}
+
+.company-service-text > div{
+  display: flex;  
+  text-align: left;
+  gap:14px;
+  align-items: center;
+}
+
+.company-service-text p {
+  font-size: 12px;
+}
+
+.position-svg {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: #005CFF;
+  color:white;
 }
 
 /* Estilos Desktop */
@@ -513,11 +562,11 @@ a {
     padding-left: 38px;
   }
 
-  .company-product-text > h3 {
+  .title {
     font-size: 30px;
   }
 
-  .company-product-text > p {
+  .paragraph {
     font-size: 18px;
   }
 }

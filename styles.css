@@ -310,7 +310,7 @@ a {
 
 /* Detalhes produto da empresa */
 
-.company-product-container{
+.company-product-container {
   position: relative;
   width: 100%;
 }
@@ -318,7 +318,7 @@ a {
 .company-product-container > div:first-child {
   position: relative;
   width: 100%;
-  background-color: #C2C2C2;
+  background-color: #c2c2c2;
 }
 
 .company-product-container img {
@@ -341,14 +341,15 @@ a {
   font-weight: 700;
   font-size: 24px;
   line-height: 140%;
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .company-product-text > p {
   font-family: "Nunito", sans-serif;
   font-size: 14px;
   line-height: 140%;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
 }
 
 /* Estilos Desktop */
@@ -476,6 +477,48 @@ a {
     padding-top: 12px;
     padding-bottom: 12px;
     gap: 8px;
+  }
+
+  /* Detalhes produto da empresa */
+
+  .company-product-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .company-product-container > div:first-child {
+    position: relative;
+    flex: 6;
+    background-color: #c2c2c2;
+  }
+
+  .company-product-container img {
+    width: 100%;
+  }
+
+  .company-product-text {
+    flex: 4;
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    justify-content: center;
+
+    margin-top: 0px;
+    padding-left: 38px;
+  }
+
+  .company-product-text > h3 {
+    font-size: 30px;
+  }
+
+  .company-product-text > p {
+    font-size: 18px;
   }
 }
 

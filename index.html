@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -300,16 +300,90 @@
           />
           <div class="policy">
             <input type="checkbox" />
-            <p>Estou de acordo com a <a href="/"> Politica de privacidade</a></p>
-            
+            <p>
+              Estou de acordo com a <a href="/"> Politica de privacidade</a>
+            </p>
           </div>
           <button class="custom-button">Cadastrar</button>
         </form>
       </section>
     </main>
 
-    <footer>
-      <p>Footer</p>
+    <footer class="container">
+      <!-- Logo e sociais -->
+      <div class="footer-logo">
+        <img class="logo" src="/assets/logo.png" alt="logo" />
+        <div>
+          <a href="/">
+            <img src="/assets/instagram.svg" alt="instagram" />
+          </a>
+          <a href="/">
+            <img src="/assets/facebook.svg" alt="facebook" />
+          </a>
+          <a href="/">
+            <img src="/assets/youtube.svg" alt="youtube" />
+          </a>
+          <a href="/">
+            <img src="/assets/tiktok.svg" alt="titkok" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Conteúdo -->
+      <div class="footer-content">
+
+        <div class="footer-item">
+          <!-- Titulo item -->
+          <div class="footer-item-title">
+            <h4>Institucional</h4>
+            <button onclick="toggleFooter(this)">
+              <img src="/assets/arrow-down.svg" alt="seta para baixo" />
+            </button>
+          </div>
+          <!-- Categorias item -->
+          <div class="footer-item-categories">
+            <h5>Sobre Nós</h5>
+            <h5>Nossas Lojas</h5>
+            <h5>Privacidade e Segurança</h5>
+            <h5>Termos e Condições</h5>
+          </div>
+        </div>
+
+        <div class="footer-item">
+          <!-- Titulo item -->
+          <div class="footer-item-title">
+            <h4>Central de ajuda</h4>
+            <button onclick="toggleFooter(this)">
+              <img src="/assets/arrow-down.svg" alt="seta para baixo" />
+            </button>
+          </div>
+          <!-- Categorias item -->
+          <div class="footer-item-categories">
+            <h5>Sobre Nós</h5>
+            <h5>Nossas Lojas</h5>
+            <h5>Privacidade e Segurança</h5>
+            <h5>Termos e Condições</h5>
+          </div>
+        </div>
+
+        <div class="footer-item">
+          <!-- Titulo item -->
+          <div class="footer-item-title">
+            <h4>Atendimento</h4>
+            <button onclick="toggleFooter(this)">
+              <img src="/assets/arrow-down.svg" alt="seta para baixo" />
+            </button>
+          </div>
+          <!-- Categorias item -->
+          <div class="footer-item-categories">
+            <h5>Sobre Nós</h5>
+            <h5>Nossas Lojas</h5>
+            <h5>Privacidade e Segurança</h5>
+            <h5>Termos e Condições</h5>
+          </div>
+        </div>
+
+      </div>
     </footer>
 
     <script src="script.js"></script>

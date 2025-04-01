@@ -489,6 +489,49 @@ a {
   text-decoration: underline;
 }
 
+/* Footer */
+
+footer {
+  padding-bottom: 26px;
+}
+
+.footer-logo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap:40px
+}
+
+.footer-item {
+  border-top: 1px solid #DDDDDD;
+  border-bottom:1px solid #DDDDDD;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.footer-logo > div:first-of-type{
+  display: flex;
+  gap: 40px;
+}
+
+.footer-item-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item-categories {
+  color: #303030;
+  font-weight: 400;
+
+  max-height: 0;
+  overflow: hidden;
+  transition: all 250ms;
+}
+
 /* Estilos Desktop */
 /* Pequeno */
 /* @media (min-width: 768px) {

@@ -453,6 +453,8 @@ a {
   align-items: center;
   gap: 16px;
 
+  margin-top: 16px;
+
   padding: 16px;
   padding-top: 38px;
   padding-bottom: 38px;
@@ -742,6 +744,52 @@ a {
     font-size: 30px;
     line-height: 140%;
   }
+
+  /* NewsLetter */
+
+  .news-letter{
+    width: 100%;
+  }
+
+.news-letter > p {
+  font-size: 20px;
+}
+
+.news-letter > form {
+  width: 100%;
+  background: #DEDEDE;
+
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+
+  margin-top: 24px;
+
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.news-letter .custom-button {
+  width: fit-content;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.text-input {
+  width: 280px;
+}
+
+.news-letter .policy {
+  width: fit-content;
+
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
 }
 
 /* Desktops grandes */

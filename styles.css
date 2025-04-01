@@ -428,6 +428,65 @@ a {
   line-height: 140%;
 }
 
+/* NewsLetter */
+
+.news-letter > p {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+}
+
+.news-letter > p > span {
+  color: #005CFF
+}
+
+.news-letter > form {
+  width: 100%;
+  background: #F5F5F5;
+
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  padding: 16px;
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+.text-input {
+  all:unset;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 14px;
+  padding-left: 22px;
+  padding-right: 22px;
+  width: 100%;
+}
+
+.text-input::placeholder {
+  color: #000000;
+}
+
+.news-letter .policy {
+  font-size: 12px;
+  font-weight: 700;
+  color: #656565;
+  width: fit-content;
+
+  display: inline-flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.news-letter .policy a {
+  text-decoration: underline;
+}
+
 /* Estilos Desktop */
 /* Pequeno */
 /* @media (min-width: 768px) {

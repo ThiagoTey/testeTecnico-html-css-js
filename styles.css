@@ -439,12 +439,12 @@ a {
 }
 
 .news-letter > p > span {
-  color: #005CFF
+  color: #005cff;
 }
 
 .news-letter > form {
   width: 100%;
-  background: #F5F5F5;
+  background: #f5f5f5;
 
   border-radius: 8px;
 
@@ -461,8 +461,8 @@ a {
 }
 
 .text-input {
-  all:unset;
-  background: #FFFFFF;
+  all: unset;
+  background: #ffffff;
   border-radius: 8px;
   padding: 14px;
   padding-left: 22px;
@@ -496,13 +496,13 @@ footer {
   padding-bottom: 20px;
 }
 
-.footer-container{
+.footer-container {
   padding-bottom: 40px;
   padding-top: 40px;
   display: flex;
   flex-direction: column;
-  gap:40px;
-  background-color: #F5F5F5;
+  gap: 40px;
+  background-color: #f5f5f5;
 }
 
 .footer-logo {
@@ -513,16 +513,16 @@ footer {
   justify-content: center;
   align-items: center;
 
-  gap:40px
+  gap: 40px;
 }
 
 .footer-item {
-  border-top: 1px solid #DDDDDD;
-  border-bottom:1px solid #DDDDDD;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
   padding: 16px;
 }
 
-.footer-logo > div:first-of-type{
+.footer-logo > div:first-of-type {
   display: flex;
   gap: 40px;
 }
@@ -541,6 +541,8 @@ footer {
   transition: all 250ms;
 }
 
+/* Footer métodos pagamento */
+
 .payment-methods {
   display: flex;
   flex-wrap: wrap;
@@ -553,18 +555,18 @@ footer {
 }
 
 /* Footer patrocinadores */
-.sponsors{
+.sponsors {
   padding-left: 16px;
   padding-right: 16px;
 }
 
-.sponsors > p{
+.sponsors > p {
   font-size: 12px;
   color: #303030;
   line-height: 20px;
 }
 
-.sponsors > div{
+.sponsors > div {
   padding-left: 16px;
   padding-right: 16px;
   margin-top: 40px;
@@ -573,7 +575,7 @@ footer {
   justify-content: space-between;
 }
 
-.sponsors > div > img{
+.sponsors > div > img {
   object-fit: contain;
   max-width: 55px;
 }
@@ -836,49 +838,169 @@ footer {
 
   /* NewsLetter */
 
-  .news-letter{
+  .news-letter {
     width: 100%;
   }
 
-.news-letter > p {
-  font-size: 20px;
-}
+  .news-letter > p {
+    font-size: 20px;
+  }
 
-.news-letter > form {
-  width: 100%;
-  background: #DEDEDE;
+  .news-letter > form {
+    width: 100%;
+    background: #dedede;
 
-  border-radius: 8px;
+    border-radius: 8px;
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
 
-  margin-top: 24px;
+    margin-top: 24px;
 
-  padding-top: 64px;
-  padding-bottom: 64px;
-}
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
 
-.news-letter .custom-button {
-  width: fit-content;
-  padding-left: 24px;
-  padding-right: 24px;
-}
+  .news-letter .custom-button {
+    width: fit-content;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 
-.text-input {
-  width: 280px;
-}
+  .text-input {
+    width: 280px;
+  }
 
-.news-letter .policy {
-  width: fit-content;
+  .news-letter .policy {
+    width: fit-content;
 
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-}
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  /* Footer */
+
+  footer {
+    margin-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .footer-container {
+    padding-bottom: 64px;
+    padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    background-color: #f5f5f5;
+  }
+
+  .footer-container > div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 1280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+
+    flex: 3;
+  }
+
+  .footer-logo {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: left;
+    align-items: baseline;
+
+    gap: 40px;
+
+    flex: 1;
+  }
+
+  .footer-logo > div:first-of-type {
+    display: flex;
+    gap: 40px;
+  }
+
+  .footer-item {
+    padding: 0px;
+    border: none;
+
+    max-width: 245px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-item-title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-item-categories {
+    max-height: fit-content;
+  }
+
+  .footer-item-categories > h5 {
+    color: #303030;
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 14px;
+  }
+
+  /* Footer métodos pagamento */
+
+  .payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 34px;
+    justify-content: center;
+  }
+
+  .payment-methods img {
+    object-fit: contain;
+  }
+
+  /* Footer patrocinadores */
+  .sponsors {
+    font-size: 12px;
+
+    max-width: 1280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .sponsors > div {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 40px;
+  
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  
+  .sponsors > div > img {
+    object-fit: contain;
+    max-width: 55px;
+  }
 }
 
 /* Desktops grandes */

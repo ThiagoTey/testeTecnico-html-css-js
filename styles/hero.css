@@ -1,0 +1,159 @@
+.hero {
+    position: relative;
+    display: flex;
+    background-color: #e7e7ea;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  
+    /* box-shadow:inset 0px 4px 3px -2px rgba(0, 0, 0) ;
+    -webkit-box-shadow:inset 0px 4px 3px -2px rgba(0, 0, 0) ;
+    -moz-box-shadow:inset 0px 4px 3px -2px rgba(0, 0, 0) ; */
+  
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow:inset 0px 4px 3px -2px rgba(0, 0, 0, 0.3) ;
+    -webkit-box-shadow:inset 0px 4px 3px -2px rgba(0, 0, 0, 0.3) ;
+    -moz-box-shadow:inset 0px 4px 3px -2px rgba(0, 0, 0, 0.3) ;
+    z-index: 2; 
+    pointer-events: none; 
+  }
+  
+  
+  .hero > div:first-child {
+    width: 50%;
+    position: relative;
+    display: flex;
+  }
+  
+  .hero img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: visible;
+    right: 5em;
+  }
+  
+  .hero-text {
+    width: 50%;
+    font-family: "Nunito", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+    padding-right: 22px;
+  }
+  
+  .hero-text h2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+  }
+  
+  .hero-text > h2 > span:first-child {
+    font-weight: 700;
+  }
+  
+  .hero-text > h2 > span:last-child {
+    font-weight: 300;
+  }
+  
+  .hero-text p {
+    color: #005cff;
+    margin-top: 12px;
+  }
+  
+  .hero-text > p:first-child {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .hero-text > p:last-child {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+/* Estilos Desktop */
+/* Pequeno */
+/* @media (min-width: 768px) {
+} */
+
+/* Media */
+@media (min-width: 1024px) {
+
+  .hero {
+    display: flex;
+    background-color: #e7e7ea;
+    width: 100%;
+    height: 510px;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  .hero > div:first-child {
+    width: 685px;
+    position: relative;
+    display: flex;
+  }
+
+  .hero img {
+    all: unset;
+  }
+
+  .hero-text {
+    width: fit-content;
+    font-family: "Nunito", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+    padding-right: 22px;
+  }
+
+  .hero-text h2 {
+    display: flex;
+    flex-direction: row;
+    font-size: 100px;
+  }
+
+  .hero-text > h2 > span:first-child {
+    font-weight: 700;
+  }
+
+  .hero-text > h2 > span:last-child {
+    font-weight: 300;
+  }
+
+  .hero-text p {
+    color: #005cff;
+    margin-top: 12px;
+    font-size: 25px;
+  }
+
+  .hero-text > p:first-of-type {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+  }
+
+  .hero-text > p:last-child {
+    font-size: 60px;
+    font-weight: 700;
+  }
+}
+
+/* Desktops grandes */
+@media (min-width: 1280px) {
+}

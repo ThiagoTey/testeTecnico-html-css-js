@@ -1,0 +1,120 @@
+.discount-header {
+  background-color: #005cff;
+  color: white;
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-weight: 700;
+}
+
+.discount-header p :first-child {
+  background: #6220c1;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 4px;
+}
+
+.discount-header p :last-child {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.logo {
+  object-fit: contain;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar > div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart span {
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  background-color: #005cff;
+  color: white;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  border: #dddddd 1px solid;
+  border-radius: 10px;
+  padding: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.search input {
+  all: unset;
+  width: 100%;
+}
+
+.search input::placeholder {
+  color: black;
+  font-weight: 600;
+}
+
+/* Estilos Desktop */
+/* Pequeno */
+/* @media (min-width: 768px) {
+} */
+
+/* Media */
+@media (min-width: 1024px) {
+  .search {
+    width: 600px;
+  }
+
+  .user {
+    display: flex;
+    gap: 8px;
+  }
+
+  .user div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .category {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .category button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  }
+}
+
+/* Desktops grandes */
+@media (min-width: 1280px) {
+}

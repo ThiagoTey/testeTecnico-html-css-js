@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  all: unset;
+  /* font-family: "Nunito", sans-serif; */
+  font-family: "Nunito Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+p {
+  all: unset;
+}
+
+span {
+  all: unset;
+}
+
+button {
+  all: unset;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.custom-button {
+  background-color: #005cff;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+.hide-desktop {
+  display: block;
+}
+
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.paragraph {
+  font-size: 18px;
+}
+
+/* Estilos Desktop */
+/* Pequeno */
+/* @media (min-width: 768px) {
+} */
+
+/* Media */
+@media (min-width: 1024px) {
+  main {
+    gap: 96px;
+  }
+
+  .hide-mobile {
+    display: block;
+  }
+  .hide-desktop {
+    display: none !important;
+  }
+  .container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .paragraph {
+    font-size: 18px;
+  }
+}
+
+/* Desktops grandes */
+@media (min-width: 1280px) {
+}

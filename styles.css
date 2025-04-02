@@ -492,7 +492,17 @@ a {
 /* Footer */
 
 footer {
-  padding-bottom: 26px;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+.footer-container{
+  padding-bottom: 40px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap:40px;
+  background-color: #F5F5F5;
 }
 
 .footer-logo {
@@ -509,8 +519,7 @@ footer {
 .footer-item {
   border-top: 1px solid #DDDDDD;
   border-bottom:1px solid #DDDDDD;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px;
 }
 
 .footer-logo > div:first-of-type{
@@ -530,6 +539,43 @@ footer {
   max-height: 0;
   overflow: hidden;
   transition: all 250ms;
+}
+
+.payment-methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+  justify-content: center;
+}
+
+.payment-methods img {
+  object-fit: contain;
+}
+
+/* Footer patrocinadores */
+.sponsors{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.sponsors > p{
+  font-size: 12px;
+  color: #303030;
+  line-height: 20px;
+}
+
+.sponsors > div{
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 40px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.sponsors > div > img{
+  object-fit: contain;
+  max-width: 55px;
 }
 
 /* Estilos Desktop */

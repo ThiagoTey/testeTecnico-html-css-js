@@ -58,3 +58,11 @@ const toggleFooter = (button) => {
     categories.style.maxHeight = categories.scrollHeight + "px"; 
   }
 }
+
+const moveSlide = (button,direcao) => {
+  let container = button.parentElement.querySelector(".product-container"); 
+  let productWidth = container.querySelector(".product-card").offsetWidth + 8;
+  // container.scrollLeft += productWidth * direcao;
+
+  container.scrollLeft += container.offsetWidth * direcao;
+}

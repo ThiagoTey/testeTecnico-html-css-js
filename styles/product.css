@@ -1,10 +1,9 @@
-/* Produto */
-
 .product-container::-webkit-scrollbar {
   display: none;
 }
 
 .product-container {
+  position: relative;
   display: flex;
   overflow-x: scroll;
   scroll-behavior: smooth;
@@ -14,8 +13,6 @@
   scrollbar-width: none;
 
   gap: 8px;
-
-  /* overflow-x-scroll scroll-smooth no-scrollbar space-x-4 lg:gap-5 mt-8 p-4 */
 }
 
 .product-card {
@@ -96,6 +93,41 @@
   font-size: 10px;
   font-weight: 700;
 }
+
+.left-button, .right-button{
+  position: absolute;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 30px;
+  height: 30px;
+
+  background-color: #ffffff;
+  border: #005CFF 1px solid;
+  border-radius: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  -webkit-box-shadow: 0px 3px 4px 0px rgb(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 3px 4px 0px rgb(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 4px 0px rgb(0, 0, 0, 0.25);
+
+  z-index: 2;
+}
+
+.left-button {
+  left: 0;
+}
+
+.right-button {
+  right: 0;
+}
+
 /* Estilos Desktop */
 /* Pequeno */
 /* @media (min-width: 768px) {

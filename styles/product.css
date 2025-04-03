@@ -94,18 +94,60 @@
   font-weight: 700;
 }
 
-.left-button, .right-button{
+.product-dot {
+  display: flex;
+  gap:8px;
+  margin: auto;
+  margin-top: 16px;
+  width: fit-content;
+}
+
+.dot, .active-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #838383;
+  border-radius: 100%;
+}
+
+.active-dot {
+  background-color: #303030;
+}
+
+/* Estilos Desktop */
+/* Pequeno */
+/* @media (min-width: 768px) {
+} */
+
+/* Media */
+@media (min-width: 1024px) {
+  .product-card {
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    max-width: calc((100% / 5) - (8px * 4 / 5));
+    position: relative;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    gap: 8px;
+  }
+
+  .product-container {
+  }
+
+  .left-button,
+.right-button {
   position: absolute;
   margin-top: auto;
   margin-bottom: auto;
 
   top: 50%;
+  transform: translateY(-50%);
 
   width: 30px;
   height: 30px;
 
   background-color: #ffffff;
-  border: #005CFF 1px solid;
+  border: #005cff 1px solid;
   border-radius: 100%;
 
   display: flex;
@@ -128,24 +170,6 @@
 .right-button {
   right: 0;
 }
-
-/* Estilos Desktop */
-/* Pequeno */
-/* @media (min-width: 768px) {
-} */
-
-/* Media */
-@media (min-width: 1024px) {
-  .product-card {
-    border: 1px solid #dddddd;
-    border-radius: 10px;
-    width: 20%;
-    position: relative;
-    padding: 8px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    gap: 8px;
-  }
 }
 
 /* Desktops grandes */

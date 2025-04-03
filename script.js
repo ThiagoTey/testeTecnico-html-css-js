@@ -42,10 +42,54 @@ const createProduct = () => {
 const productContainers = document.getElementsByClassName("product-container");
 
 Array.from(productContainers).forEach(productContainer => {
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 13; i++) {
     const div = createProduct();
     productContainer.appendChild(div);
   }
+
+  let dots = Math.ceil(productContainer.scrollWidth / productContainer.offsetWidth);
+  let dotsContainer = productContainer.parentElement.querySelector(".product-dot");
+  if (dotsContainer) { 
+    dotsContainer.innerHTML = ""; 
+  
+    for (let i = 0; i < dots; i++) {
+      const div = document.createElement("div");
+      div.className = "dot";
+
+      if(i === 0) {
+        div.classList.add("active-dot");
+      }
+
+      dotsContainer.appendChild(div);
+    }
+  }
+});
+
+const moveSlide = (button, direcao) => {
+  let container = button.parentElement.querySelector(".product-container");
+  let productWidth = container.querySelector(".product-card").offsetWidth + 8;
+  // container.scrollLeft += productWidth * direcao;
+
+  container.scrollLeft += container.offsetWidth * direcao;
+
+  updateActiveDot(container);
+}
+
+const updateActiveDot = (container) => {
+  let dotsContainer = container.parentElement.querySelector(".product-dot");
+  if (!dotsContainer) return;
+
+  let dots = dotsContainer.querySelectorAll(".dot");
+  let index = Math.round(container.scrollLeft / container.offsetWidth); // Calcula qual dot ativar
+
+  dots.forEach(dot => dot.classList.remove("active-dot")); // Remove a classe de todos
+  if (dots[index]) {
+    dots[index].classList.add("active-dot"); // Adiciona a classe no dot correto
+  }
+};
+
+document.querySelectorAll(".product-container").forEach(container => {
+  container.addEventListener("scroll", () => updateActiveDot(container));
 });
 
 const toggleFooter = (button) => {
@@ -53,16 +97,8 @@ const toggleFooter = (button) => {
   let categories = footerItem.querySelector(".footer-item-categories");
 
   if (categories.style.maxHeight) {
-    categories.style.maxHeight = null; 
+    categories.style.maxHeight = null;
   } else {
-    categories.style.maxHeight = categories.scrollHeight + "px"; 
+    categories.style.maxHeight = categories.scrollHeight + "px";
   }
-}
-
-const moveSlide = (button,direcao) => {
-  let container = button.parentElement.querySelector(".product-container"); 
-  let productWidth = container.querySelector(".product-card").offsetWidth + 8;
-  // container.scrollLeft += productWidth * direcao;
-
-  container.scrollLeft += container.offsetWidth * direcao;
 }

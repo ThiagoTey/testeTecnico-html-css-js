@@ -7,6 +7,12 @@
   font-weight: 700;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .discount-header p :first-child {
   background: #6220c1;
   padding-left: 4px;
@@ -24,11 +30,14 @@
 }
 
 .navbar {
+  position: relative;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  z-index: 1000;
 }
 
 .navbar > div:first-child {
@@ -104,6 +113,7 @@
   .category {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
   }
 
   .category button {
@@ -112,6 +122,50 @@
     align-items: center;
     justify-content: center;
     font-weight: 700;
+  }
+
+  .active {
+    color:#005cff;
+    font-weight: 700;
+  }
+
+  .open-categories {
+    position: absolute;
+    display: flex;
+    gap: 100px;
+    top: 100%;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 16px;
+
+    color: #656565;
+    font-size: 14px;
+
+    box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  .category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 200px;
+
+  }
+
+  .category-list > li {
+    width: 100%;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .subcategory-list > li:hover , .category-list > li:hover{
+    color:#005cff;
+    font-weight: 700;
+    cursor: pointer;
   }
 }
 

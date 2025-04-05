@@ -80,11 +80,11 @@ const updateActiveDot = (container) => {
   if (!dotsContainer) return;
 
   let dots = dotsContainer.querySelectorAll(".dot");
-  let index = Math.round(container.scrollLeft / container.offsetWidth); // Calcula qual dot ativar
+  let index = Math.round(container.scrollLeft / container.offsetWidth); 
 
-  dots.forEach(dot => dot.classList.remove("active-dot")); // Remove a classe de todos
+  dots.forEach(dot => dot.classList.remove("active-dot"));
   if (dots[index]) {
-    dots[index].classList.add("active-dot"); // Adiciona a classe no dot correto
+    dots[index].classList.add("active-dot"); 
   }
 };
 

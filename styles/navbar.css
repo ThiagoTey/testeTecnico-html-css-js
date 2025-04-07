@@ -131,7 +131,7 @@ ul {
 
   .open-categories {
     position: absolute;
-    display: flex;
+    display: none;
     gap: 100px;
     top: 100%;
     background-color: #FFFFFF;
@@ -162,10 +162,22 @@ ul {
     align-items: center;
   }
 
+  .subcategory-list {
+    display: none;
+  }
+
   .subcategory-list > li:hover , .category-list > li:hover{
     color:#005cff;
     font-weight: 700;
     cursor: pointer;
+  }
+
+  .open-categories.show {
+    display: flex;
+  }
+
+  .subcategory-list.show {
+    display: block;
   }
 }
 

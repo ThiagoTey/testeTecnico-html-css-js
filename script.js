@@ -10,6 +10,46 @@ categories.forEach(category => {
 });
 
 
+// *********************
+const openCategoryButton = document.getElementById("openCategoryBtn");
+const categoryContainer = document.getElementById("openCategory");
+const categoryList = document.getElementById('categoryList');
+const categoryItems = document.querySelectorAll(".category-item");
+const subcategoryLists = document.querySelectorAll('.subcategory-list');
+
+openCategoryButton.addEventListener('click', () => {
+  console.log("click");
+  categoryContainer.classList.toggle('show')
+  categoryList.classList.toggle('show');
+  subcategoryLists.forEach(sub => sub.classList.remove('show'));
+});
+
+categoryItems.forEach(item => {
+  item.addEventListener("mouseenter", () => {
+    console.log("enter mouse");
+    const targetSub = item.dataset.id;
+    console.log(item.dataset.id)
+
+    subcategoryLists.forEach(sub => {
+      sub.classList.remove('show');
+    });
+
+    const subToShow = document.querySelector(`.subcategory-list[data-id="${targetSub}"]`);
+    if (subToShow) {
+      console.log("have sub to show");
+      subToShow.classList.add('show');
+    }
+  })
+})
+
+document.getElementById('categoryMenu').addEventListener('mouseleave', () => {
+  subcategoryLists.forEach(sub => sub.classList.remove('show'));
+});
+
+
+
+// ****************
+
 const createProduct = () => {
   const div = document.createElement("div");
   div.className = "product-card";

@@ -22,13 +22,14 @@ openCategoryButton.addEventListener('click', () => {
   categoryContainer.classList.toggle('show')
   categoryList.classList.toggle('show');
   subcategoryLists.forEach(sub => sub.classList.remove('show'));
+  categoryItems.forEach(item => item.classList.remove('active'))
 });
 
 categoryItems.forEach(item => {
   item.addEventListener("mouseenter", () => {
-    console.log("enter mouse");
     const targetSub = item.dataset.id;
-    console.log(item.dataset.id)
+    categoryItems.forEach(item => item.classList.remove('active'))
+    item.classList.add('active');
 
     subcategoryLists.forEach(sub => {
       sub.classList.remove('show');

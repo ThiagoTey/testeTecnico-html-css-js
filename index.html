@@ -84,12 +84,41 @@
           <div class="hide-mobile category" id="category">
             <div id="openCategoryBtn">
               <button>
-                <img
-                  width="20px"
-                  class="hamburguer"
-                  src="/assets/hamburguer.svg"
-                  alt="HamburgerBtn"
-                />
+                <svg
+                  width="14"
+                  height="12"
+                  viewBox="0 0 14 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="1"
+                    y1="6"
+                    x2="13"
+                    y2="6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <line
+                    x1="1"
+                    y1="11"
+                    x2="13"
+                    y2="11"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <line
+                    x1="1"
+                    y1="1"
+                    x2="13"
+                    y2="1"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
                 <span>Todas as Categorias</span>
               </button>
             </div>
@@ -97,90 +126,25 @@
         </div>
 
         <div class="hide-mobile open-categories" id="openCategory">
-          <ul class="category-list" id="categoryList">
-            <li class="category-item" data-id="sub1">
-              <p>Departamento</p>
-              <svg
-                width="6"
-                viewBox="0 0 5 9"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </li>
+          <ul class="category-list" id="categoryList"></ul>
 
-            <li class="category-item" data-id="sub1">
-              <p>Departamento</p>
-              <svg
-                width="6"
-                viewBox="0 0 5 9"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </li>
-
-            <li class="category-item" data-id="sub1">
-              <p>Departamento</p>
-              <svg
-                width="6"
-                viewBox="0 0 5 9"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </li>
-
-            <li class="category-item" data-id="sub1">
-              <p>Departamento</p>
-              <svg
-                width="6"
-                viewBox="0 0 5 9"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </li>
-          </ul>
-
-          <div class="subcategory-list show" data-id="sub1">
+          <div style="width: 100%" id="subCategoryContainer"></div>
+          <!-- <div class="subcategory-list show" data-id="sub1">
             <ul>
               <li>Categoria</li>
               <li>Categoria</li>
               <li>Categoria</li>
               <li>Categoria</li>
-            </ul>
-
-            <ul>
+              <li>Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
               <li>Categoria</li>
               <li>Categoria</li>
               <li>Categoria</li>
               <li>Categoria</li>
             </ul>
-
-            <ul>
-              <li>Categoria</li>
-              <li>Categoria</li>
-              <li>Categoria</li>
-              <li>Categoria</li>
-            </ul>
-          </div>
+          </div> -->
 
           <div class="menu-img">
             <img src="/assets/seccondmug.png" alt="avanti-mug" />

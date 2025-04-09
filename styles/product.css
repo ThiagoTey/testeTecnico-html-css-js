@@ -20,6 +20,7 @@
   border: 1px solid #dddddd;
   border-radius: 10px;
   width: 50%;
+  max-width: calc((100% / 2) - (8px * 1 / 2));
   position: relative;
   padding: 8px;
   padding-top: 12px;
@@ -115,8 +116,18 @@
 
 /* Estilos Desktop */
 /* Pequeno */
-/* @media (min-width: 768px) {
-} */
+@media (min-width: 768px) {
+  .product-card {
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    max-width: calc((100% / 3) - (8px * 2 / 3));
+    position: relative;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    gap: 8px;
+  }
+}
 
 /* Media */
 @media (min-width: 1024px) {

@@ -40,12 +40,23 @@
           <img class="logo" src="/assets/logo.png" alt="logo" />
 
           <!-- Pesquisa Desktop -->
-          <form class="hide-mobile">
+          <form class="hide-mobile search-form" id="searchForm">
             <div class="search">
-              <input placeholder="Digite aqui o que você procura" type="text" />
-              <img src="/assets/search.svg" alt="ícone-lupa" />
+              <input
+                id="searchInput"
+                placeholder="Digite aqui o que você procura"
+                type="text"
+              />
+              <button type="submit" style="cursor: pointer">
+                <img src="/assets/search.svg" alt="ícone-lupa" />
+              </button>
             </div>
+
+            <!-- Mensagem ao pesquisar -->
+            <div id="message"></div>
           </form>
+
+          <!-- Campo de pesquisa feito -->
 
           <div
             style="
@@ -547,5 +558,6 @@
     <script src="/script/categoriesMenu.js"></script>
     <script src="/script/productSlide.js"></script>
     <script src="/script/footer.js"></script>
+    <script src="/script/search.js"></script>
   </body>
 </html>

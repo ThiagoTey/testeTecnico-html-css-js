@@ -89,6 +89,25 @@ ul {
   font-weight: 600;
 }
 
+#message {
+  display: none;
+  position: absolute;
+  bottom: -40px;
+  background-color: #FFFFFF;
+  border: 1px solid #656565;
+  border-radius: 8px;
+  width: 100%;
+  padding: 8px;
+}
+
+.search-form {
+  position: relative;
+}
+
+.block {
+  display: block !important;
+}
+
 /* Estilos Desktop */
 /* Pequeno */
 /* @media (min-width: 768px) {

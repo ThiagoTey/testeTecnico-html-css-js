@@ -84,11 +84,18 @@
 
         <div>
           <!-- Pesquisa mobile -->
-          <form class="hide-desktop">
+          <form class="hide-desktop search-form" id="searchFormMobile">
             <div class="search">
-              <input placeholder="Digite aqui o que você procura" type="text" />
-              <img src="/assets/search.svg" alt="ícone-lupa" />
+              <input
+                id="searchInputMobile"
+                placeholder="Digite aqui o que você procura"
+                type="text"
+              />
+              <button type="submit" style="cursor: pointer">
+                <img src="/assets/search.svg" alt="ícone-lupa" />
+              </button>
             </div>
+            <div id="messageMobile"></div>
           </form>
 
           <!-- Categorias -->

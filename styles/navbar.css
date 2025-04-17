@@ -100,6 +100,17 @@ ul {
   padding: 8px;
 }
 
+#messageMobile {
+  display: none;
+  position: absolute;
+  bottom: -40px;
+  background-color: #FFFFFF;
+  border: 1px solid #656565;
+  border-radius: 8px;
+  width: 100%;
+  padding: 8px;
+}
+
 .search-form {
   position: relative;
 }

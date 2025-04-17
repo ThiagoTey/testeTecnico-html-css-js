@@ -5,7 +5,7 @@ const createProduct = () => {
     div.innerHTML = `
               <span class="product-new">NOVO</span>
               <div>
-                <img src="/assets/product.png" />
+                <img src="./assets/product.png" />
               </div>
               <div class="product-text">
                 <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
